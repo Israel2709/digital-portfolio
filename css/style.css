@@ -1,0 +1,26 @@
+.project-card:hover .card-body{
+    opacity: 1;
+}
+
+.project-card:hover img{
+    filter: blur(5px) grayscale(100%);
+}
+
+.project-card{
+    transition: all 1s ease;
+}
+
+.project-card .card-body{
+    position: absolute;
+    background-color: rgba(0,0,0,.8);
+    width: 100%;
+    height: 100%;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: all 1s ease;
+}

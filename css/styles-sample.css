@@ -1,0 +1,97 @@
+/*Reglas de css*/
+
+/*Selector universal*/
+*{
+    font-family: arial;
+}
+
+/*Selector por tagname*/
+li{
+    font-weight: bold;
+}
+
+/*Selector por clase*/
+.text-darkred{
+    color:darkred
+}
+
+.font-italic{
+    font-style: italic;
+}
+
+/*Selector por ID*/
+#main-header{
+    text-transform: uppercase;
+}
+
+#prueba{
+    color: rebeccapurple;
+}
+
+.text-purple{
+    color: purple;
+}
+
+h4{
+    color: slategray;
+}
+
+h4{
+    color: peru;
+}
+
+li:nth-of-type(3){
+    font-size: 20px;
+}
+
+li:first-of-type{
+    text-decoration: underline;
+}
+
+li:last-of-type{
+    color: tomato;
+}
+
+/*Selector anidado*/
+ul li{
+    padding: 1rem;
+    background-color: turquoise;
+}
+
+ol li{
+    padding:.5rem 1rem;
+    border-bottom:1px solid #ccc;
+}
+
+ol li:nth-of-type(even){
+    background-color: lightblue;
+}
+
+ol li:nth-of-type(odd){
+    background-color: gray;
+}
+img{
+    transition:all 1s ease;
+    width: 500px;
+}
+
+input[type="checkbox"]{
+    width: 100px;
+    height: 100px;
+}
+
+input[type="checkbox"]:checked{
+    width: 50px;
+    height: 50px;
+}
+
+
+input[type="checkbox"]:checked + img{
+    opacity: 0;
+}
+
+img:hover{
+    cursor: pointer;
+    filter: grayscale(100%) blur(100px);
+    transform: scale(.5);
+}
